@@ -10,6 +10,7 @@
     {{content-for "head"}}
 
     <link rel="stylesheet" href="{{rootURL}}app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/4.0.2/bootstrap-material-design.css" />
 
     {{content-for "head-footer"}}
   </head>
@@ -17,6 +18,10 @@
     {{content-for "body"}}
 
     <div id="app"></div>
+
+    <script src="https://cdn.rawgit.com/krakenjs/xcomponent/master/dist/xcomponent.js"></script>
+    <script src="https://cdn.rawgit.com/krakenjs/xcomponent/master/demo/frameworks/glimmer/login.js"></script>
+
     <script src="{{rootURL}}app.js"></script>
 
     {{content-for "body-footer"}}

@@ -1,3 +1,10 @@
 <div>
-  <h1>Welcome to Glimmer!</h1>
+    <h1>Log in on xyz.com</h1>
+    <hr>
+
+    {{#unless loggedIn}}
+        <log-in @prefilledEmail={{prefilledEmail}} @onLogin={{onLogin}}></log-in>
+    {{else}}
+        <p>User logged in with {{email}}</p>
+    {{/unless}}
 </div>
