@@ -3,7 +3,7 @@
     <hr>
 
     {{#unless loggedIn}}
-        <log-in @prefilledEmail={{prefilledEmail}} @onLogin={{onLogin}}></log-in>
+        <log-in @prefilledEmail={{prefilledEmail}} @onLogin={{action onLogin}}></log-in>
     {{else}}
         <p>User logged in with {{email}}</p>
     {{/unless}}
